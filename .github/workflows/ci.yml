@@ -1,0 +1,41 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  host:
+    name: тесты на хосте
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Конфигурация
+        run: cmake -S firmware -B build -DCMAKE_BUILD_TYPE=Debug
+
+      - name: Сборка
+        run: cmake --build build --parallel
+
+      - name: Тесты
+        run: ctest --test-dir build --output-on-failure
+
+  arm:
+    name: кросс-сборка под STM32G431
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Тулчейн arm-none-eabi
+        uses: carlosperate/arm-none-eabi-gcc-action@v1
+
+      # Запускать здесь нечего, цель другая: поймать момент, когда в src/foc
+      # заедет что-то хостовое. Тогда CI покраснеет ещё до появления железа.
+      - name: Конфигурация
+        run: >
+          cmake -S firmware -B build-arm
+          -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/firmware/cmake/arm-none-eabi.cmake
+          -DCMAKE_BUILD_TYPE=Release
+
+      - name: Сборка
+        run: cmake --build build-arm --parallel

@@ -1,0 +1,16 @@
+# Текстовые файлы храним как есть, без перевода концов строк:
+# Gerber, сверловка и файлы KiCad должны остаться байт в байт.
+* -text
+
+# Двоичные файлы
+*.png binary
+*.jpg binary
+*.pdf binary
+*.step binary
+*.stl binary
+
+# Производственные файлы и 3D-модели не учитывать в статистике языков
+hardware/**/manufacturing/** linguist-generated
+hardware/**/*.step linguist-generated
+hardware/**/*.stl linguist-generated
+hardware/**/*.dxf linguist-generated

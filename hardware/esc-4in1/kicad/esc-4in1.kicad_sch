@@ -1,0 +1,541 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "960987e7-2c37-417f-87a0-70ac191bc063")
+	(paper "A3")
+	(lib_symbols)
+	(text "4-IN-1 ESC / REFERENCE CIRCUITS"
+		(exclude_from_sim no)
+		(at 20 18 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+			(justify left)
+		)
+		(uuid "edffbb8e-95d4-4234-9a60-c9ad262699f7")
+	)
+	(sheet
+		(at 20 107)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "05523b7e-c1a8-45b6-a6a9-283aec44982e")
+		(property "Sheetname" "Driver M1"
+			(at 75 104 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "04-driver-M1.kicad_sch"
+			(at 75 140 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 145 62)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "10e7c5ce-86df-4126-8e22-954032d5e5c3")
+		(property "Sheetname" "Input, logic power and integration boundary"
+			(at 200 59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "01-power-interface.kicad_sch"
+			(at 200 95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 270 107)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "23c2ec5a-627f-4a2c-9833-f44934ccf248")
+		(property "Sheetname" "Driver M2"
+			(at 325 104 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "05-driver-M2.kicad_sch"
+			(at 325 140 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20 152)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "48000b67-db02-4ef3-8f0e-84f0859186ef")
+		(property "Sheetname" "Bridge M2"
+			(at 75 149 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "09-bridge-M2.kicad_sch"
+			(at 75 185 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20 197)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4bd2cf43-54b1-4177-92e3-601be5285137")
+		(property "Sheetname" "Bridge M3"
+			(at 75 194 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "10-bridge-M3.kicad_sch"
+			(at 75 230 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 145 197)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5b94475d-bea8-4ee9-9450-4dd1ae30d9d5")
+		(property "Sheetname" "Driver M4"
+			(at 200 194 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "07-driver-M4.kicad_sch"
+			(at 200 230 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 270 152)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "aeac58b4-ada1-432d-b740-56842d46b427")
+		(property "Sheetname" "Driver M3"
+			(at 325 149 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "06-driver-M3.kicad_sch"
+			(at 325 185 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 270 62)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d96537d7-50e1-4077-9e36-0ed9a93d72d0")
+		(property "Sheetname" "MCU pair A"
+			(at 325 59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "02-controller-A.kicad_sch"
+			(at 325 95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20 62)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d9873581-3645-4bbd-945b-932ed554888c")
+		(property "Sheetname" "5V buck candidate"
+			(at 75 59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "00-buck.kicad_sch"
+			(at 75 95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 145 152)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ef16f0e8-f651-4903-832a-6f8f53c4a02a")
+		(property "Sheetname" "MCU pair B"
+			(at 200 149 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "03-controller-B.kicad_sch"
+			(at 200 185 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 270 197)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f6fdad24-a6d7-4104-8a49-eb0b3aa816ae")
+		(property "Sheetname" "Bridge M4"
+			(at 325 194 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "11-bridge-M4.kicad_sch"
+			(at 325 230 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 145 107)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "fe6d3e3c-bbf1-4642-b552-5db68e3c446d")
+		(property "Sheetname" "Bridge M1"
+			(at 200 104 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "08-bridge-M1.kicad_sch"
+			(at 200 140 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(instances
+			(project "esc-4in1"
+				(path "/960987e7-2c37-417f-87a0-70ac191bc063"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,23 @@
+Drill report for foc-encoder.kicad_pcb
+Created on 2026-09-16T14:25:20
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'foc-encoder-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (24 holes))
+
+    Total plated holes count 24
+
+
+Drill file 'foc-encoder-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  2.200mm  0.0866"  (4 holes))
+
+    Total unplated holes count 4

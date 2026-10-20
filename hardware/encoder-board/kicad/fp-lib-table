@@ -1,0 +1,38 @@
+(fp_lib_table
+  (version 7)
+  (lib
+    (name "Capacitor_SMD")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/FocEnc.pretty")
+    (options "")
+    (descr "Frozen KiCad 10 footprints"))
+  (lib
+    (name "Connector_JST")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/FocEnc.pretty")
+    (options "")
+    (descr "Frozen KiCad 10 footprints"))
+  (lib
+    (name "MountingHole")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/FocEnc.pretty")
+    (options "")
+    (descr "Frozen KiCad 10 footprints"))
+  (lib
+    (name "Package_SO")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/FocEnc.pretty")
+    (options "")
+    (descr "Frozen KiCad 10 footprints"))
+  (lib
+    (name "Resistor_SMD")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/FocEnc.pretty")
+    (options "")
+    (descr "Frozen KiCad 10 footprints"))
+  (lib
+    (name "TestPoint")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/FocEnc.pretty")
+    (options "")
+    (descr "Frozen KiCad 10 footprints")))

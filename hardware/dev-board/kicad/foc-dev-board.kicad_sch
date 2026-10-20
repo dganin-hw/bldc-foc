@@ -1,0 +1,340 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "c53da5ec-2e41-498a-8e59-92e56f4be8f0")
+	(paper "A3")
+	(title_block
+	)
+	(lib_symbols)
+	(text "12 V input / fuse / reverse polarity\n5 V buck + 3.3 V LDO\nSeparate bridge power link JP1"
+		(exclude_from_sim no)
+		(at 43.18 93.98 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+			)
+			(justify left)
+		)
+		(uuid "217bd8a3-7725-44b3-8721-e874215b9f22")
+	)
+	(text "Encoder / SWD / UART / DShot\nVBUS divider / temperature NTC\n3.3 V signal interfaces"
+		(exclude_from_sim no)
+		(at 167.64 160.02 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+			)
+			(justify left)
+		)
+		(uuid "5700fb01-1186-4483-9e6b-8a92b6adf1cf")
+	)
+	(text "Six LFPAK56 MOSFETs\nThree 20 mOhm Kelvin shunts\nMotor phases A / B / C"
+		(exclude_from_sim no)
+		(at 43.18 160.02 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+			)
+			(justify left)
+		)
+		(uuid "715aa358-5bb2-41ec-a496-85b40ed614af")
+	)
+	(text "36 measurement pads\nFour M3 mounting holes\nCommon GND, no isolation"
+		(exclude_from_sim no)
+		(at 292.1 160.02 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+			)
+			(justify left)
+		)
+		(uuid "786cd58d-5524-46ba-9ae2-068e2fc4b488")
+	)
+	(text "DRV8323RS / VQFN48 + EP\nSPI / charge pump / three CSAs\nENABLE and nFAULT / BKIN"
+		(exclude_from_sim no)
+		(at 292.1 93.98 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+			)
+			(justify left)
+		)
+		(uuid "a9a94128-4425-4372-8036-5787a711b56e")
+	)
+	(text "STM32G431CBT6 / LQFP48\nTIM1 PWM + ADC1/ADC2 feedback\nHSI clock / SWD / reset / BOOT0"
+		(exclude_from_sim no)
+		(at 167.64 93.98 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+			)
+			(justify left)
+		)
+		(uuid "e86314a5-e7e3-4903-b473-6d74f28b64c4")
+	)
+	(sheet
+		(at 35.56 76.2)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "48f45501-18e9-4e8b-a948-0433390f5f78")
+		(property "Sheetname" "01 - Bench input and logic supplies"
+			(at 86.36 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Sheetfile" "01-power.kicad_sch"
+			(at 86.36 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "foc-dev-board"
+				(path "/c53da5ec-2e41-498a-8e59-92e56f4be8f0"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 160.02 142.24)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "55553dd1-8637-42d7-a513-6ec065ac4c40")
+		(property "Sheetname" "05 - Bench interfaces and measurement points"
+			(at 210.82 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Sheetfile" "05-interfaces.kicad_sch"
+			(at 210.82 184.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "foc-dev-board"
+				(path "/c53da5ec-2e41-498a-8e59-92e56f4be8f0"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 160.02 76.2)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "956365e4-4bd4-41cf-8c28-ed243d450261")
+		(property "Sheetname" "02 - STM32G431CBT6, LQFP48"
+			(at 210.82 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Sheetfile" "02-mcu.kicad_sch"
+			(at 210.82 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "foc-dev-board"
+				(path "/c53da5ec-2e41-498a-8e59-92e56f4be8f0"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 142.24)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "96e55bd5-5836-4966-ba42-9e1293a1a55e")
+		(property "Sheetname" "04 - Three half bridges and Kelvin shunts"
+			(at 86.36 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Sheetfile" "04-inverter.kicad_sch"
+			(at 86.36 184.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "foc-dev-board"
+				(path "/c53da5ec-2e41-498a-8e59-92e56f4be8f0"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 284.48 76.2)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d89c1645-8f18-4a27-ac57-a66d531caa17")
+		(property "Sheetname" "03 - DRV8323RS gate driver and current feedback"
+			(at 335.28 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Sheetfile" "03-driver.kicad_sch"
+			(at 335.28 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "foc-dev-board"
+				(path "/c53da5ec-2e41-498a-8e59-92e56f4be8f0"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 284.48 142.24)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ecd7823f-8ba5-4380-8e43-07722b2e798a")
+		(property "Sheetname" "06 - Test points and mounting"
+			(at 335.28 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Sheetfile" "06-testpoints.kicad_sch"
+			(at 335.28 184.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "foc-dev-board"
+				(path "/c53da5ec-2e41-498a-8e59-92e56f4be8f0"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

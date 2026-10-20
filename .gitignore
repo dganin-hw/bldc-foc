@@ -1,0 +1,39 @@
+# Сборка прошивки
+build/
+build-*/
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.map
+
+# Код, сгенерированный CubeMX (храним только .ioc и отчёт)
+firmware/cube/
+hardware/dev-board/cubemx/Core/
+hardware/dev-board/cubemx/Drivers/
+
+# KiCad: локальные настройки, кэш и резервные копии
+*.kicad_prl
+*.lck
+~*.lck
+fp-info-cache
+*-backups/
+.history/
+_autosave-*
+\#auto_saved_files\#
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# ОС и редакторы
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Архивы
+*.zip
