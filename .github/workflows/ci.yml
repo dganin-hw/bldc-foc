@@ -7,9 +7,9 @@ on:
 jobs:
   host:
     name: тесты на хосте
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Конфигурация
         run: cmake -S firmware -B build -DCMAKE_BUILD_TYPE=Debug
@@ -22,15 +22,16 @@ jobs:
 
   arm:
     name: кросс-сборка под STM32G431
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Тулчейн arm-none-eabi
-        uses: carlosperate/arm-none-eabi-gcc-action@v1
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi libnewlib-arm-none-eabi
+          arm-none-eabi-gcc --version
 
-      # Запускать здесь нечего, цель другая: поймать момент, когда в src/foc
-      # заедет что-то хостовое. Тогда CI покраснеет ещё до появления железа.
       - name: Конфигурация
         run: >
           cmake -S firmware -B build-arm
@@ -39,3 +40,7 @@ jobs:
 
       - name: Сборка
         run: cmake --build build-arm --parallel
+
+      - name: Проверка FPU
+        run: |
+          arm-none-eabi-readelf -A build-arm/src/foc/libfoc.a | grep "Tag_ABI_VFP_args: VFP registers"
